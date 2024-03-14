@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(5, 112, 76);
+  border: 1px solid gray;
+  padding: 25px;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+  border-radius: 8px;
+}
+.card-container:hover {
+  transform: scale(1.02);
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+}
+p {
+  font-size: 1rem;
+  margin: 0;
+}
