@@ -1,10 +1,8 @@
 import logo from "./logo.svg";
 import { Component } from "react";
 import "./App.css";
-import { CardList } from "./components/card-list";
-import { SearchBox } from "./components/search-box";
-import { Comment } from "./components/comment";
-import { FuncComponent } from "./components/func-comment";
+import { CardList } from "../components/card-list";
+import { SearchBox } from "../components/search-box";
 
 export class App extends Component {
   constructor() {
@@ -45,8 +43,8 @@ export class App extends Component {
           >
             Learn React
           </a>
-          <FuncComponent text="Мэдээ оруул" comment={this.state.comment} />
-          <FuncComponent comment={this.state.comment} />
+          <SearchBox onChange={this.onSearchChanged} />
+          <CardList robots={filteredRobots} />
         </header>
       </div>
     );
